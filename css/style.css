@@ -1,0 +1,491 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color3:#b6b6b6;
+    --bg-color2:#ff9d2d;
+    --text-color1:#000000;
+    --text-color2:#ffffff;
+    --bg-color1:#ffffff;
+    --bg-color4:rgb(53, 39, 39);
+    --bg-color5:#f3e5f0;
+
+
+}
+body{
+    background: var(--bg-color5); 
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ---Navbar---  */
+
+header{
+    position:relative;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color4);
+    padding: 10px 50px;
+    transition: 0.5s;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-color2);
+    column-gap: 0.5rem;
+    text-decoration: none;
+    list-style: none;
+}
+.logo .bx{
+    font-size: 24px;
+    color: var(--text-color2);
+    text-decoration: none;
+    list-style: none;
+}
+.navbar{
+    display: flex;
+    column-gap: 0.5rem;
+}
+.navbar a{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--text-color2);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    list-style: none;text-decoration: none;
+    list-style: none;
+}
+.navbar a:hover{
+    background: var(--bg-color2);
+    border-radius: 5rem;
+    color: var(--bg-color1);
+    transition: background 0.5s;
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+
+/* ------Hero section--- */
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-color4);
+    position: relative;
+}
+.hero .container{
+    display: flex;
+
+}
+.container .box1{
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 50px;
+
+}
+.container .box1 p{
+    text-align: justify;
+    color: var(--text-color2);
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin-top: 20%;
+    
+}
+.container .box1 .btn{
+    align-self: flex-start;
+    margin-top: 20px;
+    padding: 10px 50px;
+    color: var(--text-color2);
+    background: transparent;
+    cursor: pointer;
+    transition: 0.2s;
+    border: 1px solid rgb(255, 255, 255);
+}
+.container .box1 .btn:hover{
+    background: var(--bg-color1);
+    color: black;
+}
+.container h1{
+    font-size: 120px; 
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 60%;
+    right: 25%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container .box2{
+    flex: 50%;
+    object-fit: cover;
+}
+.container .box2 img{
+    height: 633px;
+    width: 600px;
+}
+
+/* ---About-gym Section-- */
+
+.about-gym{
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+.about-gym .about-text{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-gym h1{
+    margin-top: 50px;
+    color: var(--tex);
+    font-size: 60px;
+    font-weight: 600;
+}
+.about-gym h5{
+    margin-top: 15px;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.about-gym h5::after{
+    content: "";
+    background:var(--bg-color2) ;
+    height: 2px;
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 12px;
+    display: block;
+}
+.about-gym .about-text p{
+    margin-top: 30px;
+    font-size: 15px;
+    letter-spacing: 10px;
+    line-height: 20px;
+    font-weight: 200;
+    text-align: center;
+}
+.about-gym .container{
+    margin: 50px 80px 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    column-gap: 20px;
+    position: relative;
+
+}
+.about-gym .container::before{
+    content: "";
+    background:var(--bg-color2) ;
+    height: 200px;
+    width: 126%;
+    margin-right: auto;
+    margin-left: -20%;
+    margin-top: 10%;
+    display: block;
+    z-index: -1;
+    position: absolute;
+}
+.container .image{
+    width: 100%;
+}
+.about-gym .btn{
+    padding: 10px 35px;
+    color: var(--text-color1);
+    background: transparent;
+    cursor: pointer;
+    transition: 0.2s;
+    border: 1px solid var(--bg-color2);
+    display: flex;
+    margin: auto;
+    margin-bottom:30px;
+}
+.about-gym .btn:hover{
+    background: var(--bg-color2);
+    color: #ffffff;
+}
+
+/* -------Training Section------ */
+
+.training{
+    background-image: url(/imgs/About-us.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    /* align-items: center;
+    justify-content: center; */
+
+}
+.training .container{
+    /* width: 80%; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    column-gap: 30px;
+    padding: 250px 80px 30px; 
+    /* padding-top: 300px; */
+    /* align-items: center; */
+    /* position: relative; */
+
+}
+.training .container .box{
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color2);
+    background: var(--bg-color2);
+    align-items:flex-start;
+    padding: 20px 20px ;
+
+}
+.training .container .box .bx{
+    color: var(--bg-color2);
+    font-size: 40px;
+    margin-top: 10px;
+    padding: 30px;
+    background: var(--bg-color1);
+    border-radius: 50%;
+}
+.training .container .box h5{
+    color: var(--text-color2);
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.training .container .box p{
+    font-size: 15px;
+    font-weight: 300;
+    padding: 10px 20px 20px 0px;
+    align-self: center;
+    margin: auto;
+}
+
+/* ----Motivation Section----- */
+
+
+.motivation .container .box1{
+    flex-basis: 50%;
+    float: left;
+    padding: 80px 20px;
+    background: var(--bg-color5);
+}
+.motivation .container .box2{
+    background: var(--bg-color1);
+    color: var(--text-color1);
+    padding:100px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.motivation .container .box2 h5{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 6px;
+}
+.motivation .container .box2 h5::after{
+    content: "";
+    background:var(--text-color1) ;
+    height: 2px;
+    width: 410px;
+    display: block;
+}
+
+.motivation .container .box2 p{
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 300;
+    margin-right: 100px;
+    line-height: 25px;
+}
+.motivation .container .box2 img{
+
+    height: 300px;
+    width: 300px;
+}
+
+/* --Open Section-- */
+.open{
+    background: var(--bg-color2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.open h1{
+    color: var(--text-color2);
+    font-size: 50px;
+    font-weight: 700;
+}
+.open p{
+    color: var(--text-color2);
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 10px;
+}
+.open .btn{
+    font-size: 15px;
+    padding: 10px 35px;
+    color: var(--bg-color2);
+    background: var(--bg-color1);
+    cursor: pointer;
+    transition: 0.2s;
+    border: 1px solid var(--bg-color1);
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+}
+.open .btn:hover{
+    background: rgb(231, 231, 231);
+}
+
+/* ---- Workout Section -----  */
+
+.workout{
+    /* background: var(--text-color1); */
+    z-index: 999;
+
+}
+.workout .wo-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 100px 100px;
+}
+.workout .wo-container .wo-box1{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    position: relative;
+}
+.workout .wo-container .wo-box1 img{
+    height: 620px;
+}
+.workout .wo-container .wo-box1 .image-text{
+    background: var(--bg-color1);
+    padding: 80px 30px 50px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    right: 0;
+    top: 40%;
+}
+.workout .wo-container .wo-box1 .image-text h2{
+    font-size: 35px;
+    font-weight: 500;
+    color: var(--text-color1);
+    text-align: end;
+}
+.workout .wo-container .wo-box1 .image-text h2::after{
+    content: "";
+    background:var(--text-color1) ;
+    height: 2px;
+    width: 300px;
+    display: block;
+    margin-top: 15px;
+}
+
+.workout .wo-container .wo-box1 .image-text .btn{
+    font-size: 15px;
+    padding: 10px 35px;
+    color: var(--text-color1);
+    background: transparent;
+    cursor: pointer;
+    transition: 0.2s;
+    border: 1px solid var(--bg-color2);
+    display: flex;
+    margin-top: 40px;
+}
+.workout .wo-container .wo-box1 .image-text .btn:hover{
+    background:var(--bg-color2);
+    color: var(--text-color2);
+}
+
+.workout .wo-container .wo-box2{
+   padding-top: 0;
+   position: relative;
+   z-index: 10001;
+}
+.workout .wo-container .wo-box2::before{
+    content: "";
+    background:var(--bg-color2) ;
+    height: 200px;
+    width: 100%;
+    margin-top: 25%;
+    display: block;
+    z-index: -1;
+    position: absolute;
+}
+
+.workout .wo-container .wo-box3{
+    color: var(--text-color2);
+}
+.workout .wo-container .wo-box3 h5{
+    font-size: 30px;
+    font-weight: 400;
+}
+.workout .wo-container .wo-box3 p{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/* ----Contact Section ---- */
+
+.contact{
+    background-image:url(/imgs/contact-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    padding-right: auto;
+    padding-left: auto;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+.contact h1{
+    padding-top: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--bg-color1);
+}
+.contact .contact-us{
+    padding: 100px 150px;
+    /* background: var(--bg-color1); */
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: var(--text-color2);
+
+}
+
+
